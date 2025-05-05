@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metapor - Inspeção de Produtos</title>
+    <link rel="stylesheet" href="../style/style.css">
+
+    
+</head>
+<body>
+
+  <header id="cabecalho">
+    <h1>METAPOR</h1>
+    <nav>
+      <ul>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/LucasSoulzaax">GitHub</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/souza-lucasc-dev/">Linkedin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="principal">
+    <div class="container">
+        
+      <section id="cadastro">
+          <h2>Cadastrar Produto</h2>
+          <input type="text" id="codigo" placeholder="Código do Produto" readonly class="readonly">
+          <input type="text" id="nome"  placeholder="Nome do Produto" autocomplete="off" required>
+          <textarea id="descricao" placeholder="Descrição do Produto"></textarea>
+          <input type="date" id="validade" required>
+          <select id="estado" required>
+              <option value="novo">Novo</option>
+              <option value="reprocessado">Reprocessado</option>
+              <option value="descartado">Descartado</option>
+          </select>
+          <button id="btnCadastrar">Cadastrar Produto</button>
+      </section>
+
+      
+      <section id="inspecao">
+          <h2>Inspeção de Produtos</h2>
+          <div id="filtros">
+              <input type="text" id="filtroNome" placeholder="Filtrar por nome">
+              <button id="btnFiltrar">Filtrar</button>
+              <button id="btnMostrarVencidos">Mostrar Apenas Vencidos</button>
+          </div>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Código</th>
+                      <th>Nome</th>
+                      <th>Descrição</th>
+                      <th>Validade</th>
+                      <th>Status</th>
+                      <th>Ações</th>
+                  </tr>
+              </thead>
+              <tbody id="corpo_produtos"></tbody>
+          </table>
+      </section>
+
+      
+      <section id="campo_aprovar" class="hidden">
+          <h2>Aprovar Alteração</h2>
+          <input type="hidden" id="produtoId">
+          <p><strong>Produto:</strong> <span id="nomeProdutoAprovacao"></span></p>
+          <p><strong>Status Proposto:</strong> <span id="statusProdutoAprovacao"></span></p>
+          
+          <label for="novaValidade">Nova Validade:</label>
+          <input type="date" id="novaValidade">
+          
+          <label for="aprovar">Aprovar alteração?</label>
+          <select id="aprovar">
+              <option value="nao">Não</option>
+              <option value="sim">Sim</option>
+          </select>
+          
+          <label for="explicar" id="labelExplicar">Motivo da Reprovação:</label>
+          <textarea id="explicar" placeholder="Informe o motivo"></textarea>
+          
+          <button id="btnAprovar">Confirmar</button>
+          <button id="btnCancelar">Cancelar</button>
+      </section>
+
+      
+      <section id="relatorios">
+          <h2>Relatórios</h2>
+          <div>
+              <h3>PRODUTOS NA VALIDADE</h3>
+              <ul id="lista-validade"></ul>
+          </div>
+          <div>
+              <h3>PRODUTOS REPROCESSADOS</h3>
+              <ul id="lista-reprocessados"></ul>
+          </div>
+          <div>
+              <h3>ITENS DESCARTADOS</h3>
+              <ul id="lista-descartados"></ul>
+          </div>
+          <div>
+              <h3>JUSTIFICATIVAS</h3>
+              <ul id="lista-justificativas"></ul>
+          </div>
+      </section>
+  </div>
+
+  </main>
+  
+  <footer id="rodape">
+    <p>LucasSoulzaax</p>
+    <p>&copy; Todos os direitos reservados</p>
+  </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>
