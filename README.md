@@ -63,6 +63,20 @@ MIT License - Consulte [LICENSE](LICENSE).
 
 ---  
 
+## 🤝 Open Source
+
+Este é um projeto **open source**, criado com o objetivo de ajudar no controle de validade de produtos.  
+Sugestões, melhorias e contribuições são sempre bem-vindas! ✨  
+Se tiver uma ideia ou dica, não hesite em abrir uma **issue** ou enviar um **pull request**.
+
+---
+
+## 🙋‍♂️ Contribuições
+
+Contribuições são bem-vindas!  
+Sinta-se à vontade para abrir **issues** ou enviar **pull requests**.
+
+---
 Feito por [Lucas Souza](https://github.com/LucasSoulzaax)  
 
 🔍 **Tags:**  
