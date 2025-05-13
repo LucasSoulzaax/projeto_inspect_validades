@@ -5,7 +5,7 @@ Um sistema simples e eficiente para gerenciar a validade de produtos, com alerta
 
 🔗 **Git Clone:**  
 ```bash
-git clone https://github.com/LucasSoulzaax/projeto_metafor_validades.git
+git clone https://github.com/LucasSoulzaax/projeto_inspect_validades.git
 ```  
 
 ---  
