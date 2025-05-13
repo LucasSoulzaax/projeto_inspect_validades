@@ -1,4 +1,4 @@
-# 📦 METAPOR - Controle de Validade de Produtos 🏷️  
+# 📦 INSPECT - Controle de Validade de Produtos 🏷️  
 
 
 Um sistema simples e eficiente para gerenciar a validade de produtos, com alertas para itens vencidos e registro de reprocessamento.  
