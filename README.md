@@ -35,8 +35,8 @@ git clone https://github.com/LucasSoulzaax/projeto_inspect_validades.git
 
 1. **Clone o repositório**  
    ```bash
-   git clone https://github.com/LucasSoulzaax/projeto_metafor_validades.git
-   cd projeto_metafor_validades
+   git clone https://github.com/LucasSoulzaax/projeto_inspect_validades.git
+   cd projeto_inspect_validades
    ```  
 
 2. **Instale as dependências**  
